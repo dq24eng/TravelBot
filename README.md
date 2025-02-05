@@ -1,4 +1,4 @@
-# TravelBot
+# Travel Assistant Bot
 
 Este proyecto implementa un bot de asistencia para la planificación de viajes, capaz de proporcionar información básica y funcionalidades esenciales, con la posibilidad de escalar a una herramienta más completa.
 
