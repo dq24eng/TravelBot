@@ -6,7 +6,7 @@ Este proyecto implementa un bot de asistencia para la planificación de viajes, 
 
 *   **Búsqueda de destinos:** Permite al usuario explorar destinos con detalles básicos (nombre, ubicación y descripción breve).
 *   **Sugerencias para empacar:** Genera una lista básica de cosas para llevar según el destino y la duración del viaje.
-*   **Consulta de clima:** Obtiene información del clima para el destino y la fecha proporcionados utilizando una API pública gratuita (por ejemplo, OpenWeatherMap).
+*   **Consulta de clima:** Obtiene información del clima para el destino y la fecha proporcionados utilizando una API pública gratuita (OpenWeatherMap).
 *   **Manejo de conversaciones:** Permite al usuario cambiar de tema y retomar hilos anteriores sin perder el contexto.
 
 ## Tecnologías
