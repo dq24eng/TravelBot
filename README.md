@@ -24,34 +24,3 @@ El bot utiliza una arquitectura multi-agente con dos agentes principales:
 
 LangGraph se utiliza para definir el flujo de conversación entre los agentes y gestionar el estado de la conversación.
 
-## Instalación
-
-1.  Clonar el repositorio:
-
-    ```
-    git clone [https://github.com/tu_usuario/nombre_del_repositorio.git](https://github.com/tu_usuario/nombre_del_repositorio.git)
-    ```
-
-2.  Instalar las dependencias:
-
-    ```
-    npm install
-    ```
-
-## Uso
-
-1.  Iniciar el servidor:
-
-    ```
-    npm start
-    ```
-
-2.  Accede al bot a través del endpoint `/api/chat` enviando un input JSON simulando una conversación.
-
-## Ejemplo
-
-```
-{
-  "input": "Hola! Quiero planificar mi próximo viaje"
-}
-```
