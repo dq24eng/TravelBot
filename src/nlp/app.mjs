@@ -1,10 +1,9 @@
 import { NlpManager } from 'node-nlp';
 
-    async function userIntent(entradaUsuario) {
+    async function modelTrain(entradaUsuario) {
 
         const manager = new NlpManager({ languages: ['es'], forceNER: true, caseSensitive: false });
 
-        
         // Entrena el modelo con ejemplos de intenciones y entidades (documentos de entrenamiento)
         // Saludo
         manager.addDocument('es', 'Hola', 'saludo');
@@ -172,12 +171,5 @@ import { NlpManager } from 'node-nlp';
         return respuesta;
     }
 
-userIntent('Hola')
-
-/*
-// Ejemplo de uso
-const entradaUsuario1 = 'Necesito viajar a EEUU';
-//userIntent(entradaUsuario1).then(resultado => console.log(resultado));
-console.log(await userIntent(entradaUsuario1));
-*/
+modelTrain('Hola')  // Ejecutamos el modelo
 
