@@ -14,13 +14,15 @@ Este proyecto implementa un bot de asistencia para la planificación de viajes, 
 *   **TypeScript:** 
 *   **LangGraph:** Librería para la lógica de agentes y flujos conversacionales utilizando LangChain.
 *   **Express.js:** Framework para crear la API HTTP local.
+*   **NLP.js:** Framework de Procesamiento del Lenguaje Natural (PLN) diseñado para construir bots y asistentes virtuales
 
 ## Arquitectura
 
 El bot utiliza una arquitectura multi-agente con dos agentes principales:
 
 *   **Agente 1:** Experto en destinos (sugerencias, lugares populares, etc.).
-*   **Agente 2:** Especialista en equipaje y clima.
+*   **Agente 2:** Especialista en equipaje.
+*   **Agente 3:** Especialista en clima.
 
 LangGraph se utiliza para definir el flujo de conversación entre los agentes y gestionar el estado de la conversación.
 
