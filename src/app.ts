@@ -5,9 +5,6 @@ import { START, StateGraph, MessagesAnnotation, END } from '@langchain/langgraph
 import { NlpManager } from 'node-nlp';
 
 let inputUsr: string = ""; // Variable global para almacenar la entrada del usuario
-//let intentionUsr: string = "";  // Variable global para almacenar la intención del usuario
-//let nlpResponse: object = {}; // Variable global para almacenar la intención del usuario
-
 let usrIntent: string = ""; 
 let usrEntities: string[] = [];
 const stateAnottation = MessagesAnnotation; // Define el tipo de anotación de estado
@@ -98,15 +95,19 @@ export class TravelBot {
             } 
         }
         // Construcción de la respuesta final
+        // Saludo inicial
         if (usrIntent == "saludo") return systemResponse.slice(-1);
+        // Agente de destinos sugeridos
         if (usrIntent == "viajes.solicitar_destino") {
             if (input.includes("Hola")||input.includes("Buenas")||input.includes("Buen")) 
                 return [systemResponse[1], recommStr, ...systemResponse.slice(2)]
             // Evita el primer elemento que podría ser la entrada del usuario y segundo saludo genérico
             return [recommStr, ...systemResponse.slice(2) ]; 
         }
+        // Agente de equipajes recomendados 
         if (usrIntent == "equipaje.consultar_equipaje")
             return ["El equipaje que recomendamos es el siguiente: ", ...systemResponse.slice(-3)]
+        // Agente de clima
         if (usrIntent == "clima.consultar_clima")
             return ["El clima en lugar indicado es: ", ...systemResponse.slice(-1)]
     }
