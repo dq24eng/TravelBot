@@ -16,6 +16,7 @@
     "@langchain/langgraph": "^0.2.43",
     "@types/express": "^5.0.0",
     "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "node-nlp": "^5.0.0-alpha.5"
   },

@@ -2,8 +2,11 @@
 // API pública OpenWeatherMap
 
 import axios from 'axios';
+import dotenv from 'dotenv';
 
-const API_KEY = '211704da32e5d1be1394ff360dab52b3'; 
+dotenv.config();
+
+const API_KEY = process.env.API_KEY;
 
 export const getWeather = async (ubicacion: string | undefined, fechaString: string | undefined) => {
     let fecha: Date = new Date();
